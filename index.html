@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Movie Theater</title>
+  <link rel="icon" href="pictures/iconn.ico">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main>
+    <section>
+      <h2 class="section-label">Your Theater</h2>
+      <h1 class="main-title">Black Butler</h1>
+      <h2 class="subtitle">Book of the Atlantic</h2>
+    </section>
+
+    <div class="description">
+      <h3 class="anime-title">Black Butler: Book of the Atlantic</h3>
+      <div class="meta-info">Year: 2025 | Genre: Action, Comedy, Fantasy, Demons, Supernatural</div>
+      <p class="synopsis">
+        Synopsis: By the Queen’s order, Sebastian and Ciel travel to Germany to investigate a series of mysterious deaths. While searching for the truth behind the "Forest of Wolves"
+        a place where anyone who enters is doomed by a deadly curse—they find themselves caught in a terrifying curse.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card" style="background-image: url('pictures/bb.JPG');"></div>
+      <div class="card" style="background-image: url('pictures/bb1.JPG');"></div>
+      <div class="card" style="background-image: url('pictures/bb2.JPG');"></div>
+    </div>
+
+    <section class="trailer-section">
+      <h2>Watch the Trailer</h2>
+      <div class="video-wrapper">
+        <video id="trailer-video" controls>
+          <source src="media/blackbutler.MP4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="custom-controls">
+          <button onclick="document.getElementById('trailer-video').currentTime=0">🔁 Restart</button>
+          <button onclick="document.getElementById('trailer-video').play()">▶️ Play</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 My Movie Theater. All rights reserved.
+  </footer>
+</body>
+</html>
